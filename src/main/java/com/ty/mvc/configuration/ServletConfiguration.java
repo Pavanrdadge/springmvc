@@ -21,6 +21,8 @@ public class ServletConfiguration implements WebApplicationInitializer {
 		Dynamic dynamic = servletContext.addServlet("dispatcher", dispatcherServlet);
 		dynamic.addMapping("/");
 		dynamic.setLoadOnStartup(1);
+
+		System.out.println("Application configuration done");
 	}
 
 }
