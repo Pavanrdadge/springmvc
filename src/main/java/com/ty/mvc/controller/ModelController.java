@@ -11,6 +11,7 @@ public class ModelController {
 	public String getModelView(ModelMap map) {
 		map.put("Name", "Ram");
 		map.put("Location", "ayodhya");
+		System.out.println(map);
 
 		return "display.jsp";
 	}
